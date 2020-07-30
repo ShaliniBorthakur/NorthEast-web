@@ -1,0 +1,1 @@
+web: gunicorn neweb-masters.wsgi --log-file

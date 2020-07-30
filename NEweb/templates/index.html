@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>NE Website</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="{% static 'https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900' %}" rel="stylesheet">
+  <link href="{% static 'https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/one-page-wonder.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+  {% load static %}
+  <header class="masthead text-center text-white">
+    <div class="masthead-content">
+      <div class="container">
+        <h2 class="masthead-heading mb-0">Welcome</h2>
+		<h2 class="masthead-subheading mb-0">To</h2>
+        <h2 class="masthead-subheading mb-0">NE Handloom & Textiles Website</h2>
+        <a href="/shop" class="btn btn-primary btn-xl rounded-pill mt-5">Go To Shop</a>
+        <a href="{% url 'handleLogin' %}" class="btn btn-primary btn-xl rounded-pill mt-5">Want To Sell?</a>
+      </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="{% static 'img/Handloom.jpg' %}" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <h2 class="display-4">Handloom</h2>
+            <p>Handloom industry plays a dominant role in the cultural and economic development of the rural masses in majority of the North Eastern States. ... This region has the highest concentration and a rich heritage of handlooms in the country. Handloom is a labour intensive industry.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="{% static 'img/Textile.jpg' %}" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5">
+            <h2 class="display-4">Textiles</h2>
+            <p>Textile industry is one emerging sector that has generated huge employment for the skilled and unskilled labours. North Eastern Region is one area where it has huge potential for investments particulary in the field of textiles and handicrafts. Due to its inherent strength for skilled work force and locally available raw materials this sector is developing a lot in this region.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="{% static 'img/Handicraft.jpg' %}" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <h2 class="display-4">Handicrafts</h2>
+            <p>For centuries, the Northeast has been a smorgasbord of various cultures, which is reflected in the rich array of handicrafts one can find here – from bamboo and cane products, to masks, wood carvings, textiles and earthernware. Tourists are bound to be awestruck by the diversity of arts and crafts of the region.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-black">
+    <div class="container">
+      <p class="m-0 text-center text-white small">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+
+</html>

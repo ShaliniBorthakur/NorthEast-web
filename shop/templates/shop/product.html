@@ -1,0 +1,54 @@
+{% extends "shop/basic_seller.html" %}
+{% load crispy_forms_tags %}
+
+{% block head_title %}
+{% if page == 'A'%}
+Add Item 
+{% elif page == 'E' %}
+  Edit Item 
+{%endif%}
+{{block.super}}{%endblock%}
+
+{% block body %}
+
+  <main >
+    <div class="container wow fadeIn">
+      {% if page == 'A' %}
+      <h3 class="text-center mt-3">Add Item Form</h3>
+      {% elif page == 'E' %}
+      <h3 class="text-center mt-3">Edit Item Form</h3>
+      {%endif%}
+      <div class="row">
+        <div class="col-md-12 mb-4">
+          <div class="card">
+            <form method="POST" class="card-body" enctype="multipart/form-data">
+              {% csrf_token %}
+                {{form|crispy}}
+              
+              {% if page == 'E'%}
+              {% if qty <= 0 %}
+              <div class="col-lg-4 col-md-6 mb-4">
+                <label for="qty">Increase stock by: </label>
+                <input type='number' placehlder='Zip code' id='qty' name='qty' class='form-control' />
+                <div class="invalid-feedback">
+                  Quantity has to be greater than 0
+                </div>
+              </div>
+              {% endif %}
+              {% else %}
+                <h4>Quantity cant be updated until stock has been sold out</h4>
+              {%endif%}
+            
+              <hr class="mb-4">
+              <button class="btn btn-secondary btn-lg btn-block" style="border: 1px #2e3131!important; color: #2e3131!important;" type="submit">Submit</button>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+{% endblock body %}
