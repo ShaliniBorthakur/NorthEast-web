@@ -64,7 +64,7 @@ plyer==1.4.3
 prometheus-client==0.8.0
 prompt-toolkit==3.0.5
 pycryptodome==3.9.8
-Pygments==2.6.1
+Pygments==2.7.4
 PyJWT==1.7.1
 pylint==2.5.3
 pyparsing==2.4.7
